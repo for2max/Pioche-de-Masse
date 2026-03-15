@@ -57,7 +57,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                         set {_lore.%loop-index%} to loop-value
                     set {_L1} to yaml value "item.lore1" from "config.PDM"
                     set {_L2} to yaml value "item.lore2" from "config.PDM"
-                    set lore of tool of {_p} to "%{_L1}%", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+                    set lore of tool of {_p} to "%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 0:
                     if {_p}'s balance > 700:
                         set {_info} to (string tag "info" of custom nbt of (tool of {_p})):

@@ -10,9 +10,9 @@ function MenuPiocheIndustrielle(p: player,info: text):
     set {_name_unlock} to yaml value "upgrade.name_unlock" from "config.PDM"
     set {_name_off} to yaml value "upgrade.name_off" from "config.PDM"    
 
-    set {_name_lock_lore} to yaml value "upgrade.lore" from "config.PDM"
-    set {_name_unlock_lore} to yaml value "upgrade.ore" from "config.PDM"
-    set {_name_off_lore} to yaml value "upgrade.lore" from "config.PDM"    
+    set {_name_lock_lore} to yaml value "upgrade.name_lock.lore" from "config.PDM"
+    set {_name_unlock_lore} to yaml value "upgrade.name_unlock.lore" from "config.PDM"
+    set {_name_off_lore} to yaml value "upgrade.name_off.lore" from "config.PDM"    
 
     
 
@@ -31,11 +31,11 @@ function MenuPiocheIndustrielle(p: player,info: text):
             set {_a} to "%{_a}%" parsed as number
             set {_slot} to {_list::%{_i}%}
             if {_a} is 0:
-                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lore_lock}%" and "&7» &ePrix: &3$%{_prix}%"
+                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lock_lore}%" and "&7» &ePrix: &3$%{_prix}%"
             if {_a} is 1:
-                set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "%{_name_lore_unlock}%"
+                set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "%{_name_unlocklore}%"
             if {_a} is 3:
-                set {_item} to orange stained glass pane named "%{_name_off}%" with lore "%{_name_lore_off}%"
+                set {_item} to orange stained glass pane named "%{_name_off}%" with lore "%{_name_off.lore}%"
             make gui slot {_slot} with {_item}:
                 set {_1} to character at index 1 in {_info}
                 set {_2} to character at index 2 in {_info}

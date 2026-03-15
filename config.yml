@@ -1,7 +1,6 @@
 
 ## Définissez ici le nom de l’item ainsi que ses deux lignes de description
 ## Set the item’s name here along with its two description lines
-
 item:
   name: "&9Pioche de Masse"
   lore1: "&7» &ePeut miner en 3x3, rapide et puissante."

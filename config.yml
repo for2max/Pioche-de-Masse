@@ -24,6 +24,6 @@ prix:
 
 upgrade:
   name_lock: "&c&n"&c&nVerrouillé"
-  
+    lore:
   name_unlock: "&a&nDébloqué"
   name_off: "&6&nDésactivé"

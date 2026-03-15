@@ -24,7 +24,7 @@ prix:
 
 upgrade:
   name_lock: "&c&nVerrouillé"
-  lore: "&7» &e&oDébloquer et améliorer."
+  lore_lock: "&7» &e&oDébloquer et améliorer."
   name_unlock: "&a&nDébloqué"
   lore: "&7» &6&oDésactiver temporairement cette zone."
   name_off: "&6&nDésactivé"

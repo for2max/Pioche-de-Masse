@@ -11,7 +11,6 @@ function GivePiocheIndustrielle(p: player):
     force {_item} to glint
     set (string tag "info" of custom nbt of ({_item})) to "000010010"
     give {_item} to {_p}
-    broadcast "%{_p}%"
 function PiocheSetLore(p: player,info: text) :: objects:
     set {_1} to character at index 1 in {_info}
     set {_2} to character at index 2 in {_info}

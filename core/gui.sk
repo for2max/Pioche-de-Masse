@@ -62,15 +62,15 @@ function MenuPiocheIndustrielle(p: player,info: text):
                 if {_a} is 0:
                     if {_p}'s balance > {_prix}:
                         set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
-                            if {_info} is set:
-                                remove {_prix} from {_p}'s balance
-                                send "&c$700 ont été retiré de votre compte." to {_p}
-                                OK({_p})
-                                set {_%{_i}%} to 1
-                                set {_info2} to "%{_1}%%{_2}%%{_3}%%{_4}%%{_5}%%{_6}%%{_7}%%{_8}%%{_9}%"
-                                set (string tag "info" of custom nbt of (tool of {_p})) to "%{_info2}%"
-                                set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
-                                MenuPiocheIndustrielle({_p},{_info})
+                        if {_info} is set:
+                            remove {_prix} from {_p}'s balance
+                            send "&c$700 ont été retiré de votre compte." to {_p}
+                            OK({_p})
+                            set {_%{_i}%} to 1
+                            set {_info2} to "%{_1}%%{_2}%%{_3}%%{_4}%%{_5}%%{_6}%%{_7}%%{_8}%%{_9}%"
+                            set (string tag "info" of custom nbt of (tool of {_p})) to "%{_info2}%"
+                            set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
+                            MenuPiocheIndustrielle({_p},{_info})
 
                                 set {_item} to tool of {_p}
                                 set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")

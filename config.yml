@@ -14,3 +14,4 @@ permissions:
   use: PDM.use
   message: "&c&oVous n'avez pas la permission."
 
+price: 

@@ -23,7 +23,7 @@ prix:
   message_erreur: "&c&oVous n'avez pas assez d'argent."
 
 upgrade:
-  name_lock: "&c&n&c&nVerrouillé"
+  name_lock: "&c&nVerrouillé"
     lore: "&7» &e&oDébloquer et améliorer."
   name_unlock: "&a&nDébloqué"
     lore: "&7» &6&oDésactiver temporairement cette zone."

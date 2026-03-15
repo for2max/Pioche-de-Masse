@@ -35,7 +35,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
             if {_a} is 1:
                 set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "%{_name_unlock.lore}%"
             if {_a} is 3:
-                set {_item} to orange stained glass pane named "%{_name_off}%" with lore "%{_name_off}%"
+                set {_item} to orange stained glass pane named "%{_name_off}%" with lore "%{_name_off.lore}%"
             make gui slot {_slot} with {_item}:
                 set {_1} to character at index 1 in {_info}
                 set {_2} to character at index 2 in {_info}

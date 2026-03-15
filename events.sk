@@ -3,3 +3,8 @@ on mine:
         set {_face} to player's facing
         set {_info} to (string tag "info" of custom nbt of (tool of player))
         PiocheIndustrielleProd(player,"%{_face}%",{_info},location of event-block)
+on right click with diamond pickaxe:
+    if name of tool of player is "&6P&bioche &6I&bndustrielle":
+        if player is sneaking:
+            set {_info} to (string tag "info" of custom nbt of (tool of player))
+            MenuPiocheIndustrielle(player,{_info})

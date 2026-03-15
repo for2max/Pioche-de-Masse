@@ -19,5 +19,5 @@ permissions:
 prix:
   price: 400
   message: "&c$400 ont été retiré de votre compte."
-  name: "&c&nErreur"
+  name: "&c&nErreur OU PAS"
   message_erreur: "&c&oVous n'avez pas assez d'argent."

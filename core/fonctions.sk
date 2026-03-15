@@ -4,7 +4,7 @@ function GivePiocheIndustrielle(p: player):
     loop {_lore::*}:
         set {_lore.%loop-index%} to loop-value
 
-    set {_name} to yaml value "item.name" from "config"
+    set {_name} to yaml value "item.name" from "config.PDM"
     set {_L1} to yaml value "item.lore1" from "config"
     set {_L2} to yaml value "item.lore2" from "config"
     set {_item} to diamond pickaxe named "%{_name}%" with lore "%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"

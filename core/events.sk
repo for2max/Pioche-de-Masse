@@ -3,7 +3,7 @@ on load:
 on mine:
     set {_info} to (string tag "info" of custom nbt of (tool of player))
     if {_info} is set:
-        set {_perm} to yaml value "permissions.use" from "config"
+        set {_perm} to yaml value "permissions.use" from "config.PDMg"
         if player has permission "%{_perm}%":
             set {_face} to player's facing
             PiocheIndustrielleProd(player,"%{_face}%",{_info},location of event-block)

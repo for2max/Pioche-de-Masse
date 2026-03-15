@@ -26,4 +26,5 @@ upgrade:
   name_lock: "&c&n"&c&nVerrouillé"
     lore:
   name_unlock: "&a&nDébloqué"
+    lore:
   name_off: "&6&nDésactivé"

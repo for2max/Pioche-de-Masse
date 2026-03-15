@@ -10,6 +10,6 @@ function Perm(p: player,p2: player):
     if {_p} has permission "%{_perm}%":
         GivePiocheIndustrielle({_p2})
     else:
-        set {_message} to yaml value "permissions.message" from "config"
+        set {_message} to yaml value "permissions.message" from "config.PDM"
         send "%{_message}%" to {_p}
 

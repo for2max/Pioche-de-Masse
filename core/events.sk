@@ -10,3 +10,5 @@ on right click with diamond pickaxe:
         if player is sneaking:
             set {_info} to (string tag "info" of custom nbt of (tool of player))
             set {_info2} to (string tag "info2" of custom nbt of (tool of player))
+            MenuPiocheIndustrielle(player,{_info})
+            broadcast "%{_info2}%"

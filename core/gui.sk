@@ -1,4 +1,5 @@
 function MenuPiocheIndustrielle(p: player,info: text):
+set {_name} to yaml value "item.name" from "config.PDM"
     create a new gui with virtual chest inventory named "&6P&bioche &6I&bndustrielle" with 5 rows:
         open last created gui to {_p}
         Menu({_p})

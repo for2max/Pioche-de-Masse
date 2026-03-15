@@ -31,11 +31,11 @@ function MenuPiocheIndustrielle(p: player,info: text):
             set {_a} to "%{_a}%" parsed as number
             set {_slot} to {_list::%{_i}%}
             if {_a} is 0:
-                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lock}%" and "&7» &ePrix: &3$%{_prix}%"
+                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lock.lore}%" and "&7» &ePrix: &3$%{_prix}%"
             if {_a} is 1:
                 set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "%{_name_unlock}%"
             if {_a} is 3:
-                set {_item} to orange stained glass pane named "%{_name_off}%" with lore ""
+                set {_item} to orange stained glass pane named "%{_name_off}%" with lore "%{_name_off}%"
             make gui slot {_slot} with {_item}:
                 set {_1} to character at index 1 in {_info}
                 set {_2} to character at index 2 in {_info}

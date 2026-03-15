@@ -1,0 +1,78 @@
+function MenuPiocheIndustrielle(p: player,info: text):
+    create a new gui with virtual chest inventory named "&6P&bioche &6I&bndustrielle" with 5 rows:
+        open last created gui to {_p}
+        Menu({_p})
+        loop 45 times:
+            make gui slot (loop-number-(1)) with gray stained glass pane
+        set {_list::*} to 12, 13, 14, 21, 22, 23, 30, 31 and 32
+        loop 9 times:
+            set {_i} to loop-number
+            set {_a} to character at index {_i} in {_info}
+            set {_a} to "%{_a}%" parsed as number
+            set {_slot} to {_list::%{_i}%}
+            if {_a} is 0:
+                set {_item} to red stained glass pane named "&c&nVerrouillé" with lore "&7» &e&oDébloquer et améliorer." and "&7» &ePrix: &3$700"
+            if {_a} is 1:
+                set {_item} to lime stained glass pane named "&a&nDébloqué" with lore "&7» &6&oDésactiver temporairement cette zone."
+            if {_a} is 3:
+                set {_item} to orange stained glass pane named "&6&nDésactivé" with lore "&7» &a&oRéactiver cette zone de minage."
+            make gui slot {_slot} with {_item}:
+                set {_1} to character at index 1 in {_info}
+                set {_2} to character at index 2 in {_info}
+                set {_3} to character at index 3 in {_info}
+                set {_4} to character at index 4 in {_info}
+                set {_5} to character at index 5 in {_info}
+                set {_6} to character at index 6 in {_info}
+                set {_7} to character at index 7 in {_info}
+                set {_8} to character at index 8 in {_info}
+                set {_9} to character at index 9 in {_info}
+                if {_a} is 3:
+                    set {_%{_i}%} to 1
+                    OK({_p})
+                    set {_info2} to "%{_1}%%{_2}%%{_3}%%{_4}%%{_5}%%{_6}%%{_7}%%{_8}%%{_9}%"
+                    set (string tag "info" of custom nbt of (tool of {_p})) to "%{_info2}%"
+                    set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
+                    MenuPiocheIndustrielle({_p},{_info})
+                    set {_item} to tool of {_p}
+                    set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
+                    loop {_lore::*}:
+                        set {_lore.%loop-index%} to loop-value
+                    set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+                if {_a} is 1:
+                    if {_i} is 5:
+                        make gui slot {_slot} with barrier named "&c&nErreur" with lore "&c&oCe bloc ne peut pas être désactivé.":
+                            MenuPiocheIndustrielle({_p},{_info})
+                        NO({_p})
+                        stop
+                    set {_%{_i}%} to 3
+                    OK({_p})
+                    set {_info2} to "%{_1}%%{_2}%%{_3}%%{_4}%%{_5}%%{_6}%%{_7}%%{_8}%%{_9}%"
+                    set (string tag "info" of custom nbt of (tool of {_p})) to "%{_info2}%"
+                    set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
+                    MenuPiocheIndustrielle({_p},{_info})
+                    set {_item} to tool of {_p}
+                    set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
+                    loop {_lore::*}:
+                        set {_lore.%loop-index%} to loop-value
+                    set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+                if {_a} is 0:
+                    if {_p}'s balance > 700:
+                        if name of tool of {_p} is "&6P&bioche &6I&bndustrielle":
+                            remove 700 from {_p}'s balance
+                            send "&c$700 ont été retiré de votre compte" to {_p}
+                            OK({_p})
+                            set {_%{_i}%} to 1
+                            set {_info2} to "%{_1}%%{_2}%%{_3}%%{_4}%%{_5}%%{_6}%%{_7}%%{_8}%%{_9}%"
+                            set (string tag "info" of custom nbt of (tool of {_p})) to "%{_info2}%"
+                            set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
+                            MenuPiocheIndustrielle({_p},{_info})
+
+                            set {_item} to tool of {_p}
+                            set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
+                            loop {_lore::*}:
+                                set {_lore.%loop-index%} to loop-value
+                            set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+                    else:
+                        NO({_p})
+                        make gui slot {_slot} with barrier named "&c&nErreur" with lore "&c&oVous n'avez pas assez d'argent.":
+                            MenuPiocheIndustrielle({_p},{_info})

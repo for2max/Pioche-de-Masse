@@ -2,6 +2,7 @@ on load:
     set {PI_list::*} to stone and deepslate
 on mine:
     set {_info} to (string tag "info" of custom nbt of (tool of player))
+    if {_info} is set:
         set {_face} to player's facing
         PiocheIndustrielleProd(player,"%{_face}%",{_info},location of event-block)
         

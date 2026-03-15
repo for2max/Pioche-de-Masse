@@ -1,0 +1,212 @@
+function PI_face_bas(loc: location,info: text) :: objects:
+    loop 9 times:
+        set {_n} to "%loop-number%"
+        set {_%{_n}%} to character at index loop-number in {_info}
+    set {_base} to {_loc}
+    add 1 to x-coordinate of {_loc}
+    add -1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_1}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_2}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_3}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_4}%" is "1":
+            add {_loc} to {_var::*}
+    add 2 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_6}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to x-coordinate of {_loc}
+    add -1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_7}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_8}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_9}%" is "1":
+            add {_loc} to {_var::*}
+    return {_var::*}
+function PI_face_sud(loc: location,info: text) :: objects:
+    loop 9 times:
+        set {_n} to "%loop-number%"
+        set {_%{_n}%} to character at index loop-number in {_info}
+    set {_base} to {_loc}
+    add 1 to y-coordinate of {_loc}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_1}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_2}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_3}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_4}%" is "1":
+            add {_loc} to {_var::*} 
+    add -2 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_6}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add 1 to x-coordinate of {_loc} #MODIF
+    add -1 to y-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_7}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_8}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_9}%" is "1":
+            add {_loc} to {_var::*}
+    return {_var::*}
+function PI_face_nord(loc: location,info: text) :: objects:
+    loop 9 times:
+        set {_n} to "%loop-number%"
+        set {_%{_n}%} to character at index loop-number in {_info}
+    set {_base} to {_loc}
+    add 1 to y-coordinate of {_loc}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_1}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_2}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_3}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_4}%" is "1":
+            add {_loc} to {_var::*} 
+    add 2 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_6}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to x-coordinate of {_loc} #MODIF
+    add -1 to y-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_7}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_8}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_9}%" is "1":
+            add {_loc} to {_var::*}
+    return {_var::*}
+function PI_face_ouest(loc: location,info: text) :: objects:
+    loop 9 times:
+        set {_n} to "%loop-number%"
+        set {_%{_n}%} to character at index loop-number in {_info}
+    set {_base} to {_loc}
+    add 1 to y-coordinate of {_loc}
+    add 1 to z-coordinate of {_loc} #MODIF
+    #add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_1}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_2}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_3}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add 1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_4}%" is "1":
+            add {_loc} to {_var::*} 
+    add -2 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_6}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add 1 to z-coordinate of {_loc} #MODIF
+    add -1 to y-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_7}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_8}%" is "1":
+            add {_loc} to {_var::*}
+    add -1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_9}%" is "1":
+            add {_loc} to {_var::*}
+    return {_var::*}
+function PI_face_est(loc: location,info: text) :: objects:
+    loop 9 times:
+        set {_n} to "%loop-number%"
+        set {_%{_n}%} to character at index loop-number in {_info}
+    set {_base} to {_loc}
+    add 1 to y-coordinate of {_loc}
+    add -1 to z-coordinate of {_loc} #MODIF
+    #add -1 to x-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_1}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_2}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_3}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_4}%" is "1":
+            add {_loc} to {_var::*} 
+    add 2 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_6}%" is "1":
+            add {_loc} to {_var::*}
+    set {_loc} to {_base}
+    add -1 to z-coordinate of {_loc} #MODIF
+    add -1 to y-coordinate of {_loc}
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_7}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_8}%" is "1":
+            add {_loc} to {_var::*}
+    add 1 to z-coordinate of {_loc} #MODIF
+    if {PI_list::*} contain block at {_loc}:
+        if "%{_9}%" is "1":
+            add {_loc} to {_var::*}
+    return {_var::*}

@@ -1,1 +1,3 @@
-command /givepioche <
+command /givepioche <player>:
+    trigger:
+    

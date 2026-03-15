@@ -62,7 +62,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                         broadcast "oui"
                     set lore of tool of {_p} to "%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 0:
-                                    set {_prix} to yaml value "prix.price" from "config.PDM"
+                    set {_prix} to yaml value "prix.price" from "config.PDM"
                     set {_prix.message} to yaml value "prix.message" from "config.PDM"
                     set {_prix.messageE} to yaml value "prix.message" from "config.PDM"
                     set {_prix} to "%{_prix}%" parsed as number

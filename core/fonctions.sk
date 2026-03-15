@@ -6,3 +6,34 @@ function GivePiocheIndustrielle(p: player):
     force {_item} to glint
     set (string tag "info" of custom nbt of ({_item})) to "000010010"
     give {_item} to {_p}
+function PiocheSetLore(p: player,info: text) :: objects:
+    set {_1} to character at index 1 in {_info}
+    set {_2} to character at index 2 in {_info}
+    set {_3} to character at index 3 in {_info}
+    set {_4} to character at index 4 in {_info}
+    set {_5} to character at index 5 in {_info}
+    set {_6} to character at index 6 in {_info}
+    set {_7} to character at index 7 in {_info}
+    set {_8} to character at index 8 in {_info}
+    set {_9} to character at index 9 in {_info}
+    set {_lore} to ""
+    set {_loop} to 0
+    set {_ligne} to 0
+    set {_lore.1} to ""
+    set {_lore.2} to ""
+    set {_lore.3} to ""
+    loop 3 times:
+        add 1 to {_ligne}
+        loop 3 times:
+            add 1 to {_loop}
+            set {_loop2} to "%{_loop}%"
+            if {_%{_loop2}%} is "0":
+                set {_add} to "&c■"
+            if {_%{_loop2}%} is "1":
+                set {_add} to "&a■"
+            if {_%{_loop2}%} is "3":
+                set {_add} to "&6■"
+            set {_lore.%{_ligne}%} to "%{_lore.%{_ligne}%}%%{_add}%"
+    loop 3 times:
+        add {_lore.%loop-number%} to {_var::*}
+    return {_var::*}

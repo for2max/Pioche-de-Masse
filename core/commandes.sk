@@ -2,4 +2,6 @@ command /givepioche <player>:
     trigger:
 
 
-function Perm()
+function Perm(p: player):
+
+    

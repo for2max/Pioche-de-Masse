@@ -8,6 +8,7 @@ function GivePiocheIndustrielle(p: player):
     set {_L1} to yaml value "item.lore1" from "config"
     set {_L2} to yaml value "item.lore2" from "config"
     set {_item.2} to yaml value "item.item" from "config"
+    broadcast "%{_item.2}%"
     set {_item} to {_item.2} named "%{_name}%" with lore "%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
     force {_item} to glint
     set (string tag "info" of custom nbt of ({_item})) to "000010010"

@@ -23,6 +23,6 @@ prix:
   message_erreur: "&c&oVous n'avez pas assez d'argent."
 
 upgrade:
-  name_lock:
+  name_lock: "&c&n"&c&nVerrouillé"
   name_unlock:
   name_off: 

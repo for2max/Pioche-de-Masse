@@ -5,7 +5,7 @@ function GivePiocheIndustrielle(p: player):
     load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
     set {_name} to yaml value "item.name" from "config"
     set {_L1} to yaml value "item.name" from "config"
-    set {_name} to yaml value "item.name" from "config"
+    set {_L2} to yaml value "item.name" from "config"
     set {_item} to diamond pickaxe named "%{_name}%" with lore "", "", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
     force {_item} to glint
     set (string tag "info" of custom nbt of ({_item})) to "000010010"

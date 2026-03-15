@@ -37,3 +37,17 @@ function PiocheSetLore(p: player,info: text) :: objects:
     loop 3 times:
         add {_lore.%loop-number%} to {_var::*}
     return {_var::*}
+function PiocheIndustrielleProd(p: player,face: text,info: text,loc: location):
+    if "%{_face}%" is "south":
+        set {_var::*} to PI_face_sud({_loc},{_info})
+    if "%{_face}%" is "north":
+        set {_var::*} to PI_face_nord({_loc},{_info})
+    if "%{_face}%" is "west":
+        set {_var::*} to PI_face_ouest({_loc},{_info})
+    if "%{_face}%" is "east":
+        set {_var::*} to PI_face_ouest({_loc},{_info})
+    if "%{_face}%" is "below" or "above":
+        set {_var::*} to PI_face_bas({_loc},{_info})
+    loop {_var::*}:
+        set {_block} to block at loop-value
+        break {_block} naturally

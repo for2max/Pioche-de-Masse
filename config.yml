@@ -23,6 +23,7 @@ prix:
   message_erreur: "&c&oVous n'avez pas assez d'argent."
 
 # Définissez ici les textes liés à l'amélioration
+# Define the texts related to the upgrade here
 upgrade:
   name_lock: "&c&nVerrouillé"
   lore_lock: "&7» &e&oDébloquer et améliorer."

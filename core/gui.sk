@@ -33,7 +33,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
             if {_a} is 0:
                 set {_item} to red stained glass pane named "%{_name_lock}%" with lore "" and "&7» &ePrix: &3$%{_prix}%"
             if {_a} is 1:
-                set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "."
+                set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore ""
             if {_a} is 3:
                 set {_item} to orange stained glass pane named "%{_name_off}%" with lore "&7» &a&oRéactiver cette zone de minage."
             make gui slot {_slot} with {_item}:

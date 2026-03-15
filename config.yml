@@ -7,7 +7,7 @@ item:
   lore2: "&7» &c&oShift + clique droit pour configurer."
 
 
-
+# Définissez ici les permissions pour les administrateurs et les joueurs
 permissions:
   admin: PDM.admin
   use: PDM.use

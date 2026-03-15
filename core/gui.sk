@@ -58,7 +58,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 0:
                     if {_p}'s balance > 700:
-                        if name of tool of {_p} is "%{_name}%":
+                        if name of tool of {_p} is "%":
                             remove 700 from {_p}'s balance
                             send "&c$700 ont été retiré de votre compte" to {_p}
                             OK({_p})

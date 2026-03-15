@@ -4,4 +4,5 @@ command /givepioche <player>:
 
 function Perm(p: player):
 
-    
+        load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
+    set {_name} to yaml value "item.name" from "config"

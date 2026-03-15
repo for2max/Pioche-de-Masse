@@ -6,7 +6,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
     set {_prix.name} to yaml value "prix.name_erreur" from "config.PDM"
     set {_prix} to "%{_prix}%" parsed as number
 
-    set {_name_lock} to yaml value "prix.message_ok" from "config.PDM"
+    set {_name_lock} to yaml value "upgrade.name_lock" from "config.PDM"
     set {_name_unlock} to yaml value "prix.message_erreur" from "config.PDM"
     set {_name_off} to yaml value "prix.name_erreur" from "config.PDM"    
 

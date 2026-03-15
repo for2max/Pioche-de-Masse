@@ -31,7 +31,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
             set {_a} to "%{_a}%" parsed as number
             set {_slot} to {_list::%{_i}%}
             if {_a} is 0:
-                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lock.lore}%" and "&7» &ePrix: &3$%{_prix}%"
+                set {_item} to red stained glass pane named "%{_name_lock}%" with lore "%{_name_lock_lore}%" and "&7» &ePrix: &3$%{_prix}%"
             if {_a} is 1:
                 set {_item} to lime stained glass pane named "%{_name_unlock}%" with lore "%{_name_unlock.lore}%"
             if {_a} is 3:

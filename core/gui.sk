@@ -81,5 +81,5 @@ function MenuPiocheIndustrielle(p: player,info: text):
                             set lore of tool of {_p} to "&7%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                     else:
                         NO({_p})
-                        make gui slot {_slot} with barrier named "{_prix.messageN}r" with lore "%{_prix.messageE}%":
+                        make gui slot {_slot} with barrier named "&c&nErreur" with lore "%{_prix.messageE}%":
                             MenuPiocheIndustrielle({_p},{_info})

@@ -76,8 +76,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
                     loop {_lore::*}:
                         set {_lore.%loop-index%} to loop-value
-                    set {_L1} to yaml value "item.lore1" from "config.PDM"
-                    set {_L2} to yaml value "item.lore2" from "config.PDM"
+
 
                     if {_prix} is not a number:
                         broadcast "oui"

@@ -30,4 +30,4 @@ upgrade:
   name_off: "&6&nDésactivé"
   lore_off: "&7» &a&oRéactiver cette zone de minage."
 
-  message_erreur: &c
+  message_erreur: "&c&oCe bloc ne peut pas être désactivé."

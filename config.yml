@@ -26,6 +26,6 @@ upgrade:
   name_lock: "&c&n"&c&nVerrouillé"
     lore: "&7» &e&oDébloquer et améliorer."
   name_unlock: "&a&nDébloqué"
-    lore: ""
+    lore: "&7» &6&oDésactiver temporairement cette zone."
   name_off: "&6&nDésactivé"
     lore: ""

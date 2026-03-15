@@ -4,7 +4,7 @@ function GivePiocheIndustrielle(p: player):
         set {_lore.%loop-index%} to loop-value
     load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
     set {_name} to yaml value "item.name" from "config"
-    set {_item} to diamond pickaxe named "%{_name}%" with lore "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+    set {_item} to diamond pickaxe named "%{_name}%" with lore "", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
     force {_item} to glint
     set (string tag "info" of custom nbt of ({_item})) to "000010010"
     give {_item} to {_p}

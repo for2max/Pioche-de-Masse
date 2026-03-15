@@ -7,4 +7,6 @@ function Perm(p: player):
     load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
     set {_perm} to yaml value "permissions.admin" from "config"
 
-    if player has permission "%{_perm}%""
+    if player has permission "%{_perm}%":
+
+        

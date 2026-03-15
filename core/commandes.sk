@@ -1,5 +1,5 @@
 command /givepioche:
     trigger:
         load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
-        set {_perm} to yaml value "permissions.use" from "config"
+        set {_perm} to yaml value "permissions.admin" from "config"
         GivePiocheIndustrielle(player)

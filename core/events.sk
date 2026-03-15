@@ -2,8 +2,9 @@ on load:
     set {PI_list::*} to stone and deepslate
 on mine:
     if name of tool of player is "&6P&bioche &6I&bndustrielle":
-        set {_face} to player's facing
+
         set {_info} to (string tag "info" of custom nbt of (tool of player))
+                set {_face} to player's facing
         PiocheIndustrielleProd(player,"%{_face}%",{_info},location of event-block)
         
 on right click with diamond pickaxe:

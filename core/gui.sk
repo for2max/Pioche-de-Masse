@@ -61,7 +61,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set lore of tool of {_p} to "%{_L1}%", "%{_L2}%", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 0:
                     if {_p}'s balance > {_prix}:
-                        set {_info} to (string tag "info" of custom nbt of (tool of {_p})):
+                        set {_info} to (string tag "info" of custom nbt of (tool of {_p}))
                             if {_info} is set:
                                 remove {_prix} from {_p}'s balance
                                 send "&c$700 ont été retiré de votre compte." to {_p}

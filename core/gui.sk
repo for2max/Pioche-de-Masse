@@ -55,6 +55,8 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
                     loop {_lore::*}:
                         set {_lore.%loop-index%} to loop-value
+    set {_L1} to yaml value "item.lore1" from "config.PDM"
+    set {_L2} to yaml value "item.lore2" from "config.PDM"
                     set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 0:
                     if {_p}'s balance > 700:

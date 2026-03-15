@@ -14,5 +14,5 @@ permissions:
   use: PDM.use
   message: "&c&oVous n'avez pas la permission."
 
-
+# Définissez ici le prix d'une amélioration
 price: 400

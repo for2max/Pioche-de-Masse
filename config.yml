@@ -1,7 +1,7 @@
 
 ---------------------------------------------------------------------------------
 # Définissez ici le matériau, le nom de l’item ainsi que ses deux lignes de description
-# Set the item’s name here along with its two description lines
+# Set the material, the item’s name, and its two description lines here
 
 item:
   item: diamond pickaxe

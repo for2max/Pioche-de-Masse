@@ -17,4 +17,5 @@ permissions:
 # Définissez ici le prix d'une amélioration
 # Set the price of an upgrade here
 prix:
-  
+  price: 400
+  message: 

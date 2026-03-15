@@ -63,7 +63,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     if {_p}'s balance > {_prix}:
                         set {_info} to (string tag "info" of custom nbt of (tool of {_p})):
                             if {_info} is set:
-                                remove 700 from {_p}'s balance
+                                remove {_prix} from {_p}'s balance
                                 send "&c$700 ont été retiré de votre compte" to {_p}
                                 OK({_p})
                                 set {_%{_i}%} to 1

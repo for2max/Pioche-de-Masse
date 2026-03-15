@@ -5,7 +5,7 @@ on mine:
     if {_info} is set:
         load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
         set {_perm} to yaml value "permissions.use" from "config"
-        if player has permission ""
+        if player has permission "%{_perm}%"
         set {_face} to player's facing
         PiocheIndustrielleProd(player,"%{_face}%",{_info},location of event-block)
         

@@ -1,4 +1,11 @@
 function MenuPiocheIndustrielle(p: player,info: text):
+
+                    set {_prix} to yaml value "prix.price" from "config.PDM"
+                    set {_prix.message} to yaml value "prix.message_ok" from "config.PDM"
+                    set {_prix.messageE} to yaml value "prix.message_erreur" from "config.PDM"
+                    set {_prix.name} to yaml value "prix.name_erreur" from "config.PDM"
+                    set {_prix} to "%{_prix}%" parsed as number
+
     set {_name} to yaml value "item.name" from "config.PDM"
     create a new gui with virtual chest inventory named "%{_name}%" with 5 rows:
         open last created gui to {_p}

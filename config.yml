@@ -26,3 +26,4 @@ upgrade:
   name_lock: "&c&nVerrouillé"
   name_unlock: "&a&nDébloqué"
   name_off: "&6&nDésactivé"
+    lore: "&7» &a&oRéactiver cette zone de minage."

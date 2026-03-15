@@ -12,7 +12,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
 
     set {_name_lock_lore} to yaml value "upgrade.lore" from "config.PDM"
     set {_name_unlock_lore} to yaml value "upgrade.ore" from "config.PDM"
-    set {_name_off_lore} to yaml value "upgrade.name_off.lore" from "config.PDM"    
+    set {_name_off_lore} to yaml value "upgrade.lore" from "config.PDM"    
 
     
 

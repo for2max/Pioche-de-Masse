@@ -1,4 +1,5 @@
 function GivePiocheIndustrielle(p: player):
+    broadcast "%{_p}%"
     set {_lore::*} to PiocheSetLore({_p},"000010010")
     loop {_lore::*}:
         set {_lore.%loop-index%} to loop-value

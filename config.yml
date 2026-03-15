@@ -25,6 +25,4 @@ prix:
 upgrade:
   name_lock: "&c&n"&c&nVerrouillé"
   name_unlock: "&a&nDébloqué"
-    lore: "&7» &6&oDésactiver temporairement cette zone."
   name_off: "&6&nDésactivé"
-    lore: "&7» &a&oRéactiver cette zone de minage.""

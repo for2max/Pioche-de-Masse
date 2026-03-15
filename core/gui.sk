@@ -65,6 +65,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set {_prix} to yaml value "prix.price" from "config.PDM"
                     set {_prix.message} to yaml value "prix.message" from "config.PDM"
                     set {_prix.messageE} to yaml value "message_erreur" from "config.PDM"
+                    set {_prix.messageE} to yaml value "message_erreur" from "config.PDM"
                     set {_prix} to "%{_prix}%" parsed as number
                     if {_p}'s balance > {_prix}:
                         set {_info} to (string tag "info" of custom nbt of (tool of {_p}))

@@ -28,4 +28,4 @@ upgrade:
   name_unlock: "&a&nDébloqué"
   lore_unlock: "&7» &6&oDésactiver temporairement cette zone."
   name_off: "&6&nDésactivé"
-  lore: "&7» &a&oRéactiver cette zone de minage."
+  lore_off: "&7» &a&oRéactiver cette zone de minage."

@@ -1,6 +1,6 @@
 on load:
     set {PI_list::*} to stone and deepslate
-on mine with pick
+on mine with diamond pickaxe:
     if name of tool of player is "&6P&bioche &6I&bndustrielle":
         set {_face} to player's facing
         set {_info} to (string tag "info" of custom nbt of (tool of player))

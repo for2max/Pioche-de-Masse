@@ -58,7 +58,7 @@ function MenuPiocheIndustrielle(p: player,info: text):
                     set {_lore::*} to PiocheSetLore({_p},"%{_info2}%")
                     loop {_lore::*}:
                         set {_lore.%loop-index%} to loop-value
-                    set lore of tool of {_p} to "&7» &ePeut Creuser une zone jusqu'a 3×3", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
+                    set lore of tool of {_p} to "%{_L1}%", "&eblocs dans la roche.", "&7» &c&oShift + clique droit pour configurer.", "&7» %{_lore.1}%", "&7» %{_lore.2}%" and "&7» %{_lore.3}%"
                 if {_a} is 1:
                     if {_i} is 5:
                         make gui slot {_slot} with barrier named "%{_prix.name}%" with lore "%{_up_message_erreur}%":

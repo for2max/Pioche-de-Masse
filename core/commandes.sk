@@ -1,6 +1,6 @@
 command /givepioche <player>:
     trigger:
-        Perm()
+        Perm(player,arg 1)
 
 
 function Perm(p: player,p2: player):

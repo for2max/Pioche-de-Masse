@@ -1,7 +1,6 @@
 function MenuPiocheIndustrielle(p: player,info: text):
 
     set {_prix} to yaml value "prix.price" from "config.PDM"
-
     set {_prix.message} to yaml value "prix.message_ok" from "config.PDM"
     set {_prix.messageE} to yaml value "prix.message_erreur" from "config.PDM"
     set {_prix.name} to yaml value "prix.name_erreur" from "config.PDM"

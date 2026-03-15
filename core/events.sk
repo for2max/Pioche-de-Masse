@@ -3,7 +3,6 @@ on load:
 on mine:
     set {_info} to (string tag "info" of custom nbt of (tool of player))
     if {_info} is set:
-        load yaml "plugins/Skript/scripts/Pioche de Masse/config.yml" as "config"
         set {_perm} to yaml value "permissions.use" from "config"
         if player has permission "%{_perm}%":
             set {_face} to player's facing

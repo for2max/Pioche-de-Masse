@@ -11,4 +11,5 @@ item:
 
 permissions:
   admin: PDM.admin
-  use: 
+  use: PDM.use
+  

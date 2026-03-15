@@ -8,6 +8,7 @@ item:
 
 
 # Définissez ici les permissions pour les administrateurs et les joueurs
+# Set the permissions for administrators and players here
 permissions:
   admin: PDM.admin
   use: PDM.use

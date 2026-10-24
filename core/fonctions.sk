@@ -3,7 +3,6 @@ function GivePiocheIndustrielle(p: player):
     set {_lore::*} to PiocheSetLore({_p},"000010010")
     loop {_lore::*}:
         set {_lore.%loop-index%} to loop-value
-
     set {_name} to yaml value "item.name" from "config.PDM"
     set {_L1} to yaml value "item.lore1" from "config.PDM"
     set {_L2} to yaml value "item.lore2" from "config.PDM"

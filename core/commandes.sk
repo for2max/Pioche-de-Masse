@@ -2,7 +2,6 @@ command /givepioche <player>:
     trigger:
         set {_p} to player
         set {_perm} to yaml value "permissions.admin" from "config.PDM"
-
         if {_p} has permission "%{_perm}%":
             GivePiocheIndustrielle(arg 1)
         else:
